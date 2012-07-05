@@ -21,10 +21,10 @@ class SignupApp < Sinatra::Base
     @invalid_email = email_error
     
     haml :signup, :locals => {	:username => params[:username],
-      								:password => params[:password],
-    								:verify => params[:verify],
-    								:email => params[:email]
-    								}
+      							:password => params[:password],
+    							:verify => params[:verify],
+    							:email => params[:email]
+    							}
   end
    
   get '/signup' do
